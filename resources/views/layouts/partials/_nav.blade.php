@@ -18,7 +18,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             @if($companies->count())
                                 @foreach($companies as $company)
-                                    <a class="dropdown-item" href="{{ route('tenant.switch', $company) }}">{{ $company->name }}</a>
+                                    <a class="dropdown-item" href="{{ route('tenants', $company) }}">{{ $company->name }}</a>
                                 @endforeach
                                 <div class="dropdown-divider"></div>
                             @endif

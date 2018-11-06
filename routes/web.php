@@ -17,6 +17,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/tenant/{company}', 'TenantController@switch')->name('tenant.switch');
+Route::get('/tenants/{company}', 'TenantController@switch')->name('tenant.switch');
 
 Route::resource('companies', 'CompanyController');
